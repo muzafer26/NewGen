@@ -1,0 +1,66 @@
+/* ============================================
+   Grab & Go Theme Design Tokens
+   ============================================ */
+
+:root {
+  /* ── Color Palette — Cheerful, Playful & Illustrated ── */
+  --bg-primary:     #FFFFFF; /* Neutral clean white */
+  --bg-secondary:   #F4F0EB; /* Warm off-white surface-strong */
+  --text-primary:   #462617; /* Deep cocoa brown */
+  --text-muted:     #6D5042; /* Soft cocoa brown for body text readability */
+  --text-light:     #8C6C5E; /* Warm light cocoa brown for meta/labels */
+  
+  --primary:        #FF5F00; /* Bold tangerine orange */
+  --primary-glow:   rgba(255, 95, 0, 0.08);
+  --primary-dark:   #D85000;
+  
+  --primary-60:     #FF7A33;
+  --primary-70:     #FF8C4D;
+  --primary-80:     #FFAE80;
+  
+  --navy:           #462617; /* Deep cocoa brown replaces navy */
+  --secondary:      #462617; /* Theme secondary color */
+  --tertiary:       #F7C58A; /* Theme tertiary color */
+  --white:          #FFFFFF;
+  --border-color:   #462617; /* Flat, illustrated borders */
+  --border-dark:    #462617;
+  
+  --accent-gold:    #F7C58A; /* Sunlit sand (tertiary) */
+  --accent-gold-light: #F4F0EB;
+  --star-gold:      #FF5F00; /* Orange stars match theme */
+
+  /* ── Typography ── */
+  --font-heading:   'Syne', sans-serif;
+  --font-body:      'Outfit', sans-serif;
+  --font-accent:    'Times New Roman', serif;
+
+  /* ── Type Scale (Fluid / Clamp) ── */
+  --text-display:   clamp(48px, 6vw, 109px);
+  --text-hero:      clamp(38px, 5vw, 73px);
+  --text-h1:        clamp(28px, 3.5vw, 49px);
+  --text-h2:        clamp(22px, 2.5vw, 32px);
+  --text-h3:        20px;
+  --text-h4:        16px;
+  --text-body:      18px; /* body-md default */
+  --text-small:     16px; /* body-sm */
+  --text-xs:        12px; /* caption */
+
+  /* ── Spacing ── */
+  --section-padding: clamp(64px, 8vw, 128px);
+  --gap-grid:       30px; /* spacing.md */
+  --radius-sm:      8px;  /* rounded.sm for cards */
+  --radius-md:      8px;  /* rounded.md for inputs */
+  --radius-lg:      16px; /* rounded.lg for buttons */
+  --radius-pill:    9999px; /* rounded.full for chips */
+
+  /* ── Motion & Shadows ── */
+  --ease:           cubic-bezier(0.16, 1, 0.3, 1);
+  --speed:          0.4s;
+  --speed-fast:     0.2s;
+  
+  /* Restrained elevation: almost no shadows */
+  --shadow-sm:      none;
+  --shadow-md:      none;
+  --shadow-lg:      none;
+  --shadow-inset:   none;
+}

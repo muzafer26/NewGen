@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>New Generation Tours & Travels — Sakinaka, Mumbai</title>
+  <meta name="description" content="Premium full-service travel agency and financial utility provider in Sakinaka, Mumbai. Open 24/7."/>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="assets/css/tokens.css"/>
+  <link rel="stylesheet" href="assets/css/base.css"/>
+  <link rel="stylesheet" href="assets/css/layout.css"/>
+  <link rel="stylesheet" href="assets/css/components.css"/>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>"/>
+</head>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <div class="navbar__logo-icon"><i data-lucide="send"></i></div>
+        <div>
+          <div class="navbar__logo-text">New Generation<span>.</span></div>
+          <div class="navbar__logo-sub">Tours & Travels</div>
+        </div>
+      </a>
+      <div class="navbar__menu" id="nav-menu">
+        <a href="#hero" class="navbar__link active">Home</a>
+        <a href="#destinations" class="navbar__link">Destinations</a>
+        <a href="#services" class="navbar__link">Services</a>
+        <a href="#about" class="navbar__link">About</a>
+        <a href="#faq" class="navbar__link">FAQ</a>
+        <a href="#contact" class="navbar__link">Contact</a>
+      </div>
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL -->
+  <section class="hero-carousel" id="hero">
+    <div class="hero-slide active">
+      <img class="hero-slide__bg" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80" alt="Himalayas"/>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="container">
+          <div class="hero-slide__inner">
+            <span class="hero-slide__tag">Cheapest Flights Guaranteed</span>
+            <h1 class="hero-slide__title">Save Up To <span>₹1,500</span> On Flights</h1>
+            <p class="hero-slide__desc">Compare our fares before booking anywhere else. We guarantee domestic & international flight bookings cheaper than online rates.</p>
+            <a href="#destinations" class="btn btn--white">Explore Packages</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-slide">
+      <img class="hero-slide__bg" src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=1920&q=80" alt="Goa beach"/>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="container">
+          <div class="hero-slide__inner">
+            <span class="hero-slide__tag">Holiday Packages</span>
+            <h1 class="hero-slide__title">Explore India From <span>₹5,400</span></h1>
+            <p class="hero-slide__desc">Curated tours across Mysore, Goa, Manali, Kerala, and Ladakh. Premium hotel stays, transfers, and guided sightseeing included.</p>
+            <a href="#destinations" class="btn btn--white">View Packages</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero-slide">
+      <img class="hero-slide__bg" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=1920&q=80" alt="Kerala"/>
+      <div class="hero-slide__overlay"></div>
+      <div class="hero-slide__content">
+        <div class="container">
+          <div class="hero-slide__inner">
+            <span class="hero-slide__tag">Continuous Service</span>
+            <h1 class="hero-slide__title">Your Travel & <span>FinTech</span> Hub</h1>
+            <p class="hero-slide__desc">From domestic flight bookings to local banking solutions like credit card swipes, cash withdrawal, and instant money transfers.</p>
+            <a href="#contact" class="btn btn--outline">Contact Us Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <button class="hero-arrow hero-arrow--prev" id="hero-prev"><i data-lucide="chevron-left"></i></button>
+    <button class="hero-arrow hero-arrow--next" id="hero-next"><i data-lucide="chevron-right"></i></button>
+    
+    <div class="hero-dots">
+      <button class="hero-dot active" aria-label="Slide 1"></button>
+      <button class="hero-dot" aria-label="Slide 2"></button>
+      <button class="hero-dot" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Popular Destinations</span>
+        <h2 class="section-header__title">Where Will You <span>Go</span> Next?</h2>
+        <p class="section-header__desc">Carefully tailored holiday packages featuring India's most breathtaking getaways.</p>
+      </div>
+      
+      <div class="grid grid-4">
+        <!-- Manali -->
+        <div class="dest-card reveal">
+          <div class="dest-card__img-wrap">
+            <img class="dest-card__img" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=600&q=80" alt="Manali" loading="lazy"/>
+            <span class="dest-card__price">From ₹7,200</span>
+          </div>
+          <div class="dest-card__body">
+            <div class="dest-card__header">
+              <h3 class="dest-card__name">Manali</h3>
+              <div class="dest-card__region"><i data-lucide="map-pin"></i> Himachal</div>
+            </div>
+            <div class="dest-card__meta">
+              <span class="dest-card__meta-item"><i data-lucide="clock"></i> 5 Days</span>
+              <span class="dest-card__meta-item"><i data-lucide="users"></i> Per Person</span>
+            </div>
+            <a href="#contact" class="dest-card__link">Inquire Now <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Goa -->
+        <div class="dest-card reveal">
+          <div class="dest-card__img-wrap">
+            <img class="dest-card__img" src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&q=80" alt="Goa" loading="lazy"/>
+            <span class="dest-card__price">From ₹7,200</span>
+          </div>
+          <div class="dest-card__body">
+            <div class="dest-card__header">
+              <h3 class="dest-card__name">Goa</h3>
+              <div class="dest-card__region"><i data-lucide="map-pin"></i> West India</div>
+            </div>
+            <div class="dest-card__meta">
+              <span class="dest-card__meta-item"><i data-lucide="clock"></i> 4 Days</span>
+              <span class="dest-card__meta-item"><i data-lucide="users"></i> Per Person</span>
+            </div>
+            <a href="#contact" class="dest-card__link">Inquire Now <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Kerala -->
+        <div class="dest-card reveal">
+          <div class="dest-card__img-wrap">
+            <img class="dest-card__img" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=600&q=80" alt="Kerala" loading="lazy"/>
+            <span class="dest-card__price">From ₹14,400</span>
+          </div>
+          <div class="dest-card__body">
+            <div class="dest-card__header">
+              <h3 class="dest-card__name">Kerala</h3>
+              <div class="dest-card__region"><i data-lucide="map-pin"></i> South India</div>
+            </div>
+            <div class="dest-card__meta">
+              <span class="dest-card__meta-item"><i data-lucide="clock"></i> 6 Days</span>
+              <span class="dest-card__meta-item"><i data-lucide="users"></i> Per Person</span>
+            </div>
+            <a href="#contact" class="dest-card__link">Inquire Now <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+        
+        <!-- Ladakh -->
+        <div class="dest-card reveal">
+          <div class="dest-card__img-wrap">
+            <img class="dest-card__img" src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?w=600&q=80" alt="Ladakh" loading="lazy"/>
+            <span class="dest-card__price">From ₹22,500</span>
+          </div>
+          <div class="dest-card__body">
+            <div class="dest-card__header">
+              <h3 class="dest-card__name">Ladakh</h3>
+              <div class="dest-card__region"><i data-lucide="map-pin"></i> North India</div>
+            </div>
+            <div class="dest-card__meta">
+              <span class="dest-card__meta-item"><i data-lucide="clock"></i> 7 Days</span>
+              <span class="dest-card__meta-item"><i data-lucide="users"></i> Per Person</span>
+            </div>
+            <a href="#contact" class="dest-card__link">Inquire Now <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAN YOUR TRIP -->
+  <section class="section section-planner" id="planner">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Plan Your Trip</span>
+        <h2 class="section-header__title">Tell Us Where You <span>Want To Go</span></h2>
+        <p class="section-header__desc">Share your travel preferences and our experts will message you a custom quote directly on WhatsApp.</p>
+      </div>
+
+      <div class="planner-box reveal">
+        <form id="whatsapp-planner-form">
+          <div class="planner-grid">
+            <div class="form-group">
+              <label for="planner-destination">Destination</label>
+              <input type="text" id="planner-destination" placeholder="e.g. Manali, Dubai" required />
+            </div>
+
+            <div class="form-group">
+              <label for="planner-date">Travel Date</label>
+              <input type="date" id="planner-date" required />
+            </div>
+
+            <div class="form-group">
+              <label for="planner-travellers">Travellers</label>
+              <select id="planner-travellers" required>
+                <option value="" disabled selected>Select</option>
+                <option value="1 Traveller">1 Traveller</option>
+                <option value="2 Travellers">2 Travellers</option>
+                <option value="3-4 Travellers">3-4 Travellers</option>
+                <option value="5+ Travellers">5+ Travellers</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="planner-budget">Budget</label>
+              <select id="planner-budget" required>
+                <option value="" disabled selected>Select</option>
+                <option value="Under ₹15,000">Under ₹15,000</option>
+                <option value="₹15,000 - ₹30,000">₹15,000 - ₹30,000</option>
+                <option value="₹30,000 - ₹60,000">₹30,000 - ₹60,000</option>
+                <option value="₹60,000+">₹60,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="planner-requirements">Special Requirements</label>
+            <textarea id="planner-requirements" placeholder="Dietary needs, accessibility, must-visit spots..." rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block planner-submit">
+            Send via WhatsApp <i data-lucide="send"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--muted" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">What We Offer</span>
+        <h2 class="section-header__title">Our <span>Services</span></h2>
+        <p class="section-header__desc">Professional travel, transport utilities, and financial solutions delivered with absolute local trust.</p>
+      </div>
+      
+      <div class="grid grid-3">
+        <!-- Air Ticketing -->
+        <div class="svc-card reveal">
+          <div class="svc-card__icon"><i data-lucide="plane"></i></div>
+          <h3 class="svc-card__title">Air Ticketing</h3>
+          <p class="svc-card__desc">Domestic & international tickets. Save up to ₹1,500 compared to popular online booking platforms.</p>
+        </div>
+        
+        <!-- Train & Bus -->
+        <div class="svc-card reveal">
+          <div class="svc-card__icon"><i data-lucide="train"></i></div>
+          <h3 class="svc-card__title">Train & Bus</h3>
+          <p class="svc-card__desc">Authorized IRCTC ticketing, swift Tatkal booking assistance, and intercity luxury bus reservations.</p>
+        </div>
+        
+        <!-- Holiday Packages -->
+        <div class="svc-card reveal">
+          <div class="svc-card__icon"><i data-lucide="compass"></i></div>
+          <h3 class="svc-card__title">Holiday Packages</h3>
+          <p class="svc-card__desc">Tailor-made domestic tour packages starting from ₹5,400. Includes lodging, transfers, and activities.</p>
+        </div>
+        
+        <!-- Car Rentals -->
+        <div class="svc-card reveal">
+          <div class="svc-card__icon"><i data-lucide="car"></i></div>
+          <h3 class="svc-card__title">Car Rentals</h3>
+          <p class="svc-card__desc">Luxury sedans, SUVs, and spacious passenger vehicles for airport pick-ups, city drops, and outstation trips.</p>
+        </div>
+        
+        <!-- Hotels -->
+        <div class="svc-card reveal">
+          <div class="svc-card__icon"><i data-lucide="hotel"></i></div>
+          <h3 class="svc-card__title">Hotels</h3>
+          <p class="svc-card__desc">Handpicked accommodations across India, from budget-friendly options to premium 5-star luxury resorts.</p>
+        </div>
+        
+        <!-- FinTech Services -->
+        <div class="svc-card reveal">
+          <div class="svc-card__icon"><i data-lucide="credit-card"></i></div>
+          <h3 class="svc-card__title">FinTech Utilities</h3>
+          <p class="svc-card__desc">Secure credit card swipes, card-to-cash services, AEPS cash withdrawals, domestic money transfers, and UPI utility transactions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about__grid reveal">
+        <div class="about__img">
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80" alt="Travelling Guide" loading="lazy"/>
+          <div class="about__img-badge">
+            <h4>7+</h4>
+            <span>Years of Trust</span>
+          </div>
+        </div>
+        <div class="about__content">
+          <span class="section-header__label" style="margin-bottom:8px;">Who We Are</span>
+          <h2>A Neighbourhood Agency You Can <span>Trust</span></h2>
+          <p>New Generation Tours & Travels is a premier travel agency and branch banking hub situated right at Sakinaka, Kurla West. We provide neighborhood convenience with elite business standards, serving Mumbai's travel needs for over 7 years.</p>
+          <p>Whether you require instant flight ticketing, holiday packages, car hire services, or quick card-to-cash banking utilities, we are at your service 24/7.</p>
+          
+          <div class="about__stats">
+            <div class="about__stat">
+              <h4 class="about__stat-num" data-count="5000" data-suffix="+">0</h4>
+              <p>Happy Travellers</p>
+            </div>
+            <div class="about__stat">
+              <h4 class="about__stat-num" data-count="50" data-suffix="+">0</h4>
+              <p>Destinations</p>
+            </div>
+            <div class="about__stat">
+              <h4 class="about__stat-num" data-count="100" data-suffix="%">0</h4>
+              <p>Client Satisfaction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="container">
+      <h2>“To see the world... to draw closer, to <span>find each other</span>”</h2>
+      <p>— The Secret Life of Walter Mitty. Let our travel designers construct your next custom itinerary and return pricing quotes within 2 hours.</p>
+      <a href="#contact" class="btn btn--white">Inquire Now</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section--muted" id="reviews">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Testimonials</span>
+        <h2 class="section-header__title">Customer <span>Reviews</span></h2>
+        <p class="section-header__desc">Verified Google Maps reviews from our travellers and banking customers in Sakinaka.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="review-card reveal">
+          <div class="review-card__stars">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="review-card__text">"Best travel agency in Kurla/Sakinaka. Booked my flight to Dubai at an unbelievable price, cheaper than any online portal. Their 24/7 service is a lifesaver!"</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">RM</div>
+            <div>
+              <h4 class="review-card__name">Rohan Mehta</h4>
+              <span class="review-card__meta">Verified Traveller</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-card__stars">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="review-card__text">"Highly recommend their IRCTC train booking service. I got my Tatkal ticket confirmed within minutes. Very helpful and professional staff."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">PS</div>
+            <div>
+              <h4 class="review-card__name">Pooja Sharma</h4>
+              <span class="review-card__meta">Verified Passenger</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-card__stars">
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+          </div>
+          <p class="review-card__text">"Excellent utility services. Used their credit card cash swiping service here—fast, secure, and transparent. The only agency open late at night in this area."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">AP</div>
+            <div>
+              <h4 class="review-card__name">Amit Patel</h4>
+              <span class="review-card__meta">FinTech Customer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Help & Support</span>
+        <h2 class="section-header__title">Common <span>Questions</span></h2>
+        <p class="section-header__desc">Everything you need to know about our travel services and operations.</p>
+      </div>
+      
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do I need to visit your branch to book services?</span>
+            <span class="faq-question__icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">No physical visit is required! You can call or text us via WhatsApp. We issue tickets and itineraries digitally. However, you're always welcome to visit our local office anytime as we are open 24/7.</div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you offer IRCTC Tatkal train ticket bookings?</span>
+            <span class="faq-question__icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">Yes! We provide dedicated support for IRCTC train bookings, including Tatkal queues, with a very high success rate. Please contact us before the booking window opens.</div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What are your business operating hours?</span>
+            <span class="faq-question__icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">We operate 24 hours a day, 7 days a week. We provide continuous support so that you can get emergency ticketing and utility services at any time.</div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you support passport and visa processing?</span>
+            <span class="faq-question__icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">Absolutely. We assist with tourist and business visas for the USA, UK, Schengen area, UAE, and other global destinations, covering documentation checklist and appointment bookings.</div>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What does the credit card to cash service entail?</span>
+            <span class="faq-question__icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer__inner">We provide immediate cash swiping/withdrawals from your credit card at our office counter, offering a secure local transaction channel with competitive fee structures.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--muted" id="contact">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-header__label">Location & Details</span>
+        <h2 class="section-header__title">Visit Our <span>Office</span></h2>
+        <p class="section-header__desc">Located right in Kurla West / Sakinaka, Mumbai. Open day and night.</p>
+      </div>
+      
+      <div class="grid grid-3" style="margin-bottom: 48px;">
+        <a href="tel:+919794426577" class="contact-card reveal">
+          <div class="contact-card__icon"><i data-lucide="phone"></i></div>
+          <div class="contact-card__title">Direct Line</div>
+          <div class="contact-card__value">+91 97944 26577</div>
+        </a>
+        <a href="https://wa.me/919794426577" target="_blank" class="contact-card reveal">
+          <div class="contact-card__icon"><i data-lucide="message-square"></i></div>
+          <div class="contact-card__title">WhatsApp Support</div>
+          <div class="contact-card__value">+91 97944 26577</div>
+        </a>
+        <div class="contact-card reveal">
+          <div class="contact-card__icon"><i data-lucide="map-pin"></i></div>
+          <div class="contact-card__title">Office Address</div>
+          <div class="contact-card__value">Shop No. 10, Next to Shiv Sagar Sweets, Hari Masjid Lane, Kurla West, Sakinaka, Mumbai 400072</div>
+        </div>
+      </div>
+      
+      <div class="reveal" style="border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border-color); box-shadow:var(--shadow-md);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.938!2d72.8886!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c627a4c84d87%3A0x0!2sSakinaka%2C+Mumbai!5e0!3m2!1sen!2sin" height="400" style="border:0;display:block;width:100%;" allowfullscreen loading="lazy" title="Office Location Map"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">New Generation<span>.</span></div>
+          <p class="footer__desc">Your trusted 24/7 neighborhood agency for global ticketing and utility branch banking. Serving Mumbai since 2018.</p>
+
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="#destinations" class="footer__link">Destinations</a>
+          <a href="#services" class="footer__link">Services</a>
+          <a href="#about" class="footer__link">About Us</a>
+          <a href="#contact" class="footer__link">Inquire Now</a>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Travel Offerings</h4>
+          <a href="#services" class="footer__link">Air Ticketing</a>
+          <a href="#services" class="footer__link">IRCTC Railway Fares</a>
+          <a href="#services" class="footer__link">Holiday Packages</a>
+          <a href="#services" class="footer__link">Car Rental Fleets</a>
+        </div>
+        
+        <div>
+          <h4 class="footer__heading">Newsletter</h4>
+          <p class="footer__desc">Subscribe to get verified travel pricing and flight discount alerts directly.</p>
+          <div class="footer__newsletter">
+            <input type="email" placeholder="Your email address" aria-label="Email Address"/>
+            <button type="submit">Join</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <span>© 2026 New Generation Tours & Travels. All rights reserved.</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FAB -->
+  <a href="https://wa.me/919794426577?text=Hi!%20I%20want%20to%20enquire%20about%20travel%20bookings." target="_blank" class="whatsapp-fab" aria-label="WhatsApp Us">
+    <svg viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- SCROLL INDICATOR -->
+  <div class="scroll-indicator-path"></div>
+  <div class="scroll-airplane" id="scroll-airplane">
+    <i data-lucide="plane"></i>
+  </div>
+
+  <!-- Script Libraries -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

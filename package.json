@@ -1,0 +1,9 @@
+{
+  "name": "new-generation-tours",
+  "version": "1.0.0",
+  "description": "New Generation Tours & Travels — Website",
+  "scripts": {
+    "dev": "npx -y serve .",
+    "start": "npx -y serve ."
+  }
+}
